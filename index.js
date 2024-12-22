@@ -6,7 +6,7 @@ async function getInput(promptMessage) {
     let input;
     do {
         input = prompt(promptMessage);
-        const number = parseInt(input);
+        const number = parseFloat(input);
         if (!isNaN(number)) {
             return number; // return the number if it's valid
         } else {
